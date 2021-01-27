@@ -213,7 +213,7 @@ def deit_192_6_12(pretrained=False, **kwargs):
 @register_model
 def deit_132_3_24(pretrained=False, **kwargs): # 1258.532028
     model = VisionTransformer(
-        patch_size=16, embed_dim=192, depth=12, num_heads=6, mlp_ratio=4, qkv_bias=True,
+        patch_size=16, embed_dim=132, depth=24, num_heads=3, mlp_ratio=4, qkv_bias=True,
         norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
     model.default_cfg = _cfg()
     if pretrained:
